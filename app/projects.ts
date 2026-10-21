@@ -120,6 +120,11 @@ export const projects: Project[] = [
     brief:'以彩色兔子为主角的连续绘本图像，保留原始作品的观看顺序与节奏，完整呈现角色、场景和色彩叙事。',
     role:[],
     images:['rabbit-color-01.jpg','rabbit-color-02.jpg','rabbit-color-03.jpg','rabbit-color-04.png','rabbit-color-05.jpg','rabbit-color-06.png','rabbit-color-07.png','rabbit-color-08.png','rabbit-color-09.png','rabbit-color-10.jpg','rabbit-color-11.jpg','rabbit-color-12.png','rabbit-color-13.jpg','rabbit-color-14.jpg','rabbit-color-15.png','rabbit-color-16.png','rabbit-color-17.png','rabbit-color-18.png','rabbit-color-19.jpg','rabbit-color-20.png','rabbit-color-21.png','rabbit-color-22.png','rabbit-color-23.png','rabbit-color-24.jpg','rabbit-color-25.png','rabbit-color-26.png','rabbit-color-27.png','rabbit-color-28.png','rabbit-color-29.png','rabbit-color-30.png','rabbit-color-31.png','rabbit-color-32.png','rabbit-color-33.png','rabbit-color-34.png','rabbit-color-35.png','rabbit-color-36.png','rabbit-color-37.jpg','rabbit-color-38.jpg','rabbit-color-39.png','rabbit-color-40.png','rabbit-color-41.png','rabbit-color-42.png','rabbit-color-43.png'] },
+  { slug:'laipin-brand-experience', no:'11', title:'Laipin', cnTitle:'莱品 · 品牌与数字体验', category:'Brand Identity · Mini Program Prototype · Campaign', group:'brand', cover:'laipin-poster.png', coverPosition:'50% 50%', year:'2026', accent:'#dcebd8',
+    intro:'A warm, everyday nutrition brand experience connecting visual identity, a mini-program-style H5 prototype, campaign graphics and seven packaging concepts.',
+    brief:'莱品以“营养，回到每一天”为核心，将奶油白、森林绿和温和的视觉语言贯穿品牌传播、小程序风格 H5 原型与包装。互动演示包含选品、购物袋、模拟订单、每日记录、成长计划与积分兑换；所有交易和奖励均为演示，不代表真实上线服务。',
+    role:['Brand Experience','UI / UX Design','Campaign Visual','Packaging System'],
+    images:[] },
 ];
 
 export const getProject = (slug: string) => projects.find((project) => project.slug === slug);
