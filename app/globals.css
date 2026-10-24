@@ -81,7 +81,7 @@
 
 /* Fill the EAGLE archive card around the product; keep the full poster on its detail page. */
 .workCard[href*="eagle-product-development"] .workCardImage{background:#c4a47e}
-.workCard[href*="eagle-product-development"] .workCardImage img{object-fit:cover}
+.workCard[href*="eagle-product-development"] .workCardImage img{object-fit:cover;object-position:50% 66%!important}
 .detailCover-eagle-product-development{height:auto;background:#c4a47e}
 .detailCover-eagle-product-development img{width:100%;height:auto;object-fit:contain}
-.detailCover-eagle-product-development figcaption{position:static;display:block;box-sizing:border-box;width:100%;background:var(--paper);padding:12px 2.2vw}
+.detailCover-eagle-product-development figcaption{position:static;display:block;box-sizing:border-box;width:100%;backgrou
