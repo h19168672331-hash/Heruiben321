@@ -79,9 +79,9 @@
 /* Show both long mini-program screens edge to edge, with no letterboxed panels. */
 .laipinMiniDetails img{height:auto;max-height:none;aspect-ratio:11/40;object-fit:cover;object-position:center top;background:#f8f7ef}
 
-/* EAGLE's portrait campaign poster stays fully visible on cards and as the lead image. */
+/* Fill the EAGLE archive card around the product; keep the full poster on its detail page. */
 .workCard[href*="eagle-product-development"] .workCardImage{background:#c4a47e}
-.workCard[href*="eagle-product-development"] .workCardImage img{object-fit:contain}
+.workCard[href*="eagle-product-development"] .workCardImage img{object-fit:cover}
 .detailCover-eagle-product-development{height:auto;background:#c4a47e}
 .detailCover-eagle-product-development img{width:100%;height:auto;object-fit:contain}
 .detailCover-eagle-product-development figcaption{position:static;display:block;box-sizing:border-box;width:100%;background:var(--paper);padding:12px 2.2vw}
