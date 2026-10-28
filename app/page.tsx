@@ -1,9 +1,10 @@
 import { groups, projects } from './projects';
 import { awards, exhibitions } from './recognition';
+import HeroMosaic from './HeroMosaic';
 
 export default function Home(){return <main>
   <nav className="nav" aria-label="主导航"><a className="wordmark" href="#top">RUIBEN HE—26</a><div className="navLinks"><a href="/work">作品</a><a href="/recognition">荣誉</a><a href="#about">关于</a><a href="#contact">联系 ↗</a></div></nav>
-  <section className="hero" id="top"><p className="kicker">艺术家 · 设计师 · 创意策划<br/>伦敦 / 广州</p><h1><span>在现实之外</span><span className="shift">制造新感知。</span></h1><div className="heroBottom"><p>跨越插画、交互、品牌与空间艺术，<br/>让叙事成为可看见、可进入的体验。</p><span className="stamp">{String(projects.length).padStart(2,'0')}<br/>PROJECTS<br/>↓</span></div></section>
+  <section className="hero" id="top"><HeroMosaic/><p className="kicker">艺术家 · 设计师 · 创意策划<br/>伦敦 / 广州</p><h1><span>在现实之外</span><span className="shift">制造新感知。</span></h1><div className="heroBottom"><p>跨越插画、交互、品牌与空间艺术，<br/>让叙事成为可看见、可进入的体验。</p><span className="stamp">{String(projects.length).padStart(2,'0')}<br/>PROJECTS<br/>↓</span></div></section>
   <section className="categorySection" id="work" aria-labelledby="work-title"><div className="sectionHead"><h2 id="work-title">作品大类 / DISCIPLINES</h2><a href="/work">查看全部 {String(projects.length).padStart(2,'0')} ↗</a></div>
     {groups.map((group,index)=>{const featured=projects.find(p=>p.group===group.slug)!;return <a className="categoryRow" href={`/work#${group.slug}`} key={group.slug}>
       <div className="categoryNumber">{group.no}</div><div className="categoryTitle"><span>{group.cnTitle}</span><h3>{group.title}</h3><p>{group.description}</p></div><div className="categoryPreview"><img src={`/projects/assets/${featured.cover}`} style={{objectPosition:featured.coverPosition}} alt=""/><b>{projects.filter(p=>p.group===group.slug).length} PROJECTS</b></div><span className="categoryArrow">↗</span>
