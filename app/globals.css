@@ -45,12 +45,10 @@
 
 /* A quiet, generative mosaic made from images already present in the portfolio. */
 .hero{position:relative;isolation:isolate}
-.heroMosaic{position:absolute;inset:0;z-index:-2;pointer-events:none;display:block;filter:grayscale(1) contrast(1.24);transform-origin:72% 45%;animation:heroMosaicDrift 14s ease-in-out infinite alternate}
-@keyframes heroMosaicDrift{from{transform:translate3d(-6px,4px,0) scale(1)}to{transform:translate3d(7px,-6px,0) scale(1.025)}}
+.heroMosaic{position:absolute;inset:0;z-index:-2;pointer-events:none;display:block;filter:contrast(1.12)}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(241,240,235,.9) 0%,rgba(241,240,235,.67) 39%,rgba(241,240,235,.18) 100%)}
 .hero .kicker,.hero h1,.heroBottom{position:relative}
 @media(max-width:760px){.hero::before{background:linear-gradient(90deg,rgba(241,240,235,.94),rgba(241,240,235,.74))}}
-@media(prefers-reduced-motion:reduce){.heroMosaic{animation:none}}
 
 /* Keep every project visual optically centred inside its frame. */
 .projectImage img,.categoryPreview img,.workCardImage img,.detailCover img,.gallery figure>img:not(.galleryBackdrop),.eaglePosterWall img{object-position:50% 50%!important;margin-left:auto;margin-right:auto}
@@ -94,3 +92,4 @@
 .detailCover-eagle-product-development{height:auto;background:#c4a47e}
 .detailCover-eagle-product-development img{width:100%;height:auto;object-fit:contain}
 .detailCover-eagle-product-development figcaption{position:static;display:block;box-sizing:border-box;width:100%;background:var(--paper);padding:12px 2.2vw}
+                                                                                                                                                                                                                                                                                                     
